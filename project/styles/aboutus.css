@@ -19,13 +19,13 @@
     background-attachment: fixed;    
 }
 
-.logo, .play, .aboutus, .contactus, .download {
+.play, .aboutus, .contactus, .download {
     font-size: 28px;
     font-family: Calibri;
     color: #FFFFFF;
     font-weight: bold;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: auto;
     height: fit-content;
     transition: all 0.8s;
@@ -64,8 +64,20 @@ a:hover {
 }
 
 .logo {
-    margin-left: 20px;
+    position:relative;
+        margin:20px 20px;
+        display:inline-block;
+        height: fit-content;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all 0.8s;
+}
 
+#logo {
+    border-radius:10%;
+    padding: 5px;
 }
 
 .download {

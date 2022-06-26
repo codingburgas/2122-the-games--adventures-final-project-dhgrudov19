@@ -1,23 +1,21 @@
-/* {
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
-/*decorite homepage*/
-/*.homepage {
-    background-color: #0000FF;
-    background-image: url();  
-}*/
 
-.logo, .play, .aboutus, .contactus, .download {
+html {
+	overflow: hidden;
+}
+body {
+	background-image: url('../images/backgroundcontactus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.play, .aboutus, .contactus, .download {
     font-size: 28px;
     font-family: Calibri;
     color: #FFFFFF;
     font-weight: bold;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: auto;
     height: fit-content;
     transition: all 0.8s;
@@ -56,8 +54,21 @@ a:hover {
 }
 
 .logo {
-    margin-left: 20px;
+  position:relative;
+        margin:10px 20px;
+        display:inline-block;
+        height: fit-content;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all 0.8s;
 
+}
+
+#logo {
+  border-radius:10%;
+  padding: 5px;
 }
 
 .download {
@@ -78,15 +89,6 @@ a:hover {
 
 
 
-html {
-	overflow: hidden;
-}
-body {
-	background-image: url('../images/backgroundcontactus.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
 /*General styles for the form*/
 .container{ 
   padding: 0;
