@@ -1,97 +1,80 @@
-* {
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-weight: 400;
-    line-height: 1.8em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+html {
+	overflow: hidden;
+}
+
+body {
+	position:relative;
+	left:20px;
+}
+
+/*Add styles to the text*/
+
+
+
+.flipCards{
+	width: 100%;
+	height: 90%;
+	margin-bottom: 90%; 
+	padding-top: 10%;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+
+/*Add styles to the each individual card.*/
+
+.flipCard {
+	background-color: transparent;
+	width: 300px;
+	height: 330px;
+	border: 4px solid #060606;
+	perspective: 1000px; /*Define how far away the 3D object is from the user*/
+	display: inline-block;
+	margin-left: 3%;
+	border-radius: 15px;
+}
+
+.flipCardInner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 2.0s; /*Changes css property value smoothly, over a given duration*/
+	transform-style: preserve-3d; /*Preserve 3D style*/
+    border-radius: 15px;
+   
+}
+
+.flipCard:hover .flipCardInner {
+	transform: rotateY(180deg); /*Flips the card*/
+}
+
+.flipCardFront, .flipCardBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #eb0c0c;
+	backface-visibility: hidden; /*Keeps the backside of the card hidden*/
+    border-radius: 15px;
     
 }
-/*decorite homepage*/
-.homepage {
-    background-color: #ff0000;
-    background-image: url();
-    min-height: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
+
+.flipCardBack {
+  background-color: rgb(205, 20, 20);
+  color: black;
+  transform: rotateY(180deg); /*Flips the card*/
+      border-radius: 15px;
+
+      
 }
 
-.play, .aboutus, .contactus, .download {
-    font-size: 28px;
-    font-family: Calibri;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 40px;
-    margin-bottom: auto;
-    height: fit-content;
-    transition: all 0.8s;
+/*Add styles to the text in the cards.*/
+
+h6 {
+	font-size: 60px;
 }
 
-.play, .aboutus, .contactus, .download {
-    position: absolute;
-}
+/*Add styles to the forms*/
 
-.logo:hover, .play:hover, .aboutus:hover, .contactus:hover, .download:hover {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    opacity: 0.75;
-    color: #000000;
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 28px;
-    font-family: Calibri;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: auto;
-    height: fit-content;
-    transition: all 0.8s;
-}
-
-a:hover {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    opacity: 0.75;
-    color: #000000;
-    cursor: pointer;
-}
-
-.logo {
-    position:relative;
-        margin:20px 20px;
-        display:inline-block;
-        height: fit-content;
-        background-size: cover;
-        background-position:center;
-        background-repeat: no-repeat;
-        opacity: 1;
-        transition: all 0.8s;
-}
-
-#logo {
-    border-radius:10%;
-    padding: 5px;
-}
-
-.download {
-    right: 20px;
-}
-
-.contactus {
-    right: 158px;
-}
-
-.aboutus {
-    right: 313px;
-}
-
-.play {
-    right: 450px;
+.forms {
+	margin-top: 5%;
 }
