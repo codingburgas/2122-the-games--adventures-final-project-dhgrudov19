@@ -7,6 +7,104 @@ body {
 	left:20px;
 }
 
+/*decorite homepage*/
+.homepage {
+	background-color: rgb(192, 192, 192);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:local;   
+	margin-right: 40px; 
+}
+
+.play, .aboutus, .contactus, .download {
+    font-size: 28px;
+    font-family: Calibri;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: auto;
+    height: fit-content;
+    transition: all 0.8s;
+}
+
+.play, .aboutus, .contactus, .download {
+    position: absolute;
+}
+
+.logo:hover, .play:hover, .aboutus:hover, .contactus:hover, .download:hover {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 0.75;
+    color: #000000;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: Calibri;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: auto;
+    height: fit-content;
+    transition: all 0.8s;
+}
+
+a:hover {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 0.75;
+    color: #000000;
+    cursor: pointer;
+}
+
+.logo {
+    position:relative;
+        margin:20px 20px;
+        display:inline-block;
+        height: fit-content;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all 0.8s;
+}
+
+#logo {
+    border-radius:10%;
+    padding: 5px;
+}
+
+.download {
+    right: 20px;
+}
+
+.contactus {
+    right: 158px;
+}
+
+.aboutus {
+    right: 313px;
+}
+
+.play {
+    right: 450px;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	position:relative;
+	left:20px;
+}
+
 /*Add styles to the text*/
 
 
