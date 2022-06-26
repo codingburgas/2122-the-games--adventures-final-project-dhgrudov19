@@ -1,23 +1,15 @@
-* {
+/* {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    font-weight: 400;
-    line-height: 1.8em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 /*decorite homepage*/
-.homepage {
+/*.homepage {
     background-color: #0000FF;
-    background-image: url();
-    min-height: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
-}
+    background-image: url();  
+}*/
 
 .logo, .play, .aboutus, .contactus, .download {
     font-size: 28px;
@@ -82,4 +74,79 @@ a:hover {
 
 .play {
     right: 450px;
+}
+
+
+
+html {
+	overflow: hidden;
+}
+body {
+	background-image: url('../images/backgroundcontactus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*General styles for the form*/
+.container{ 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.feedback{
+  box-sizing: border-box;
+}
+/*Form section styles*/
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.forms {
+  width: 90%;
+  max-width: 28vw;
+  margin: 0 auto;
+  padding: 1.35vw;
+  box-shadow: 0px 0px 20px #00000010;
+  border-radius: 10px;
+  margin-bottom: 2.18vh;
+  background-color: #FFFFFF;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 2.18vh;
+  font-size: 2.18vh;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.94vh;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 0.27vw;
+  border-radius: 10px;
+}
+  
+textarea {
+  resize: vertical; /*Define if the element is resizable by the user*/
+  border-radius: 10px;
+}
+/*Target the submit button*/
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  background-color: #dddddd;
+  border-radius: 10px;
+  padding: 10px 268px 10px 175px;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
 }
